@@ -1,0 +1,53 @@
+# Конфиг наград за убийство босса
+
+enabled: true
+extinguish_player: true
+cleanse_negatives: true
+
+# Длительность положительных эффектов
+base_duration_seconds: 8            # было 6
+duration_per_level: 0.60            # было 0.06 — ощутимее растёт с уровнем
+max_duration_seconds: 60            # потолок повыше, но не бесконечный
+
+# Сила эффектов (0=I, 1=II, 2=III, 3=IV)
+amplifier_base: 0
+amplifier_per_level: 0.035          # было 0.02
+amplifier_max: 3                    # разрешаем до IV
+
+# Наборы по классам босса. Ключи: common/uncommon/rare/epic/legendary/mythic
+tiers:
+  common:
+    effects_min: 1
+    effects_max: 1
+    extra_absorption_hearts: 0
+    effect_pool: [SPEED, HASTE, REGENERATION]
+
+  uncommon:
+    effects_min: 1
+    effects_max: 2
+    extra_absorption_hearts: 0
+    effect_pool: [REGENERATION, HASTE, WATER_BREATHING, NIGHT_VISION, JUMP_BOOST]
+
+  rare:
+    effects_min: 2
+    effects_max: 2
+    extra_absorption_hearts: 2     # +1 уровень ABSORPTION (2 сердца)
+    effect_pool: [SPEED, HASTE, REGENERATION, RESISTANCE, FIRE_RESISTANCE, LUCK]
+
+  epic:
+    effects_min: 2
+    effects_max: 3
+    extra_absorption_hearts: 4     # +2 уровня ABSORPTION (4 сердца)
+    effect_pool: [SPEED, HASTE, REGENERATION, RESISTANCE, FIRE_RESISTANCE, STRENGTH, DOLPHINS_GRACE, CONDUIT_POWER]
+
+  legendary:
+    effects_min: 3
+    effects_max: 3
+    extra_absorption_hearts: 6     # +3 уровня ABSORPTION (6 сердец)
+    effect_pool: [SPEED, HASTE, REGENERATION, RESISTANCE, FIRE_RESISTANCE, STRENGTH, DOLPHINS_GRACE, CONDUIT_POWER, HERO_OF_THE_VILLAGE]
+
+  mythic:
+    effects_min: 3
+    effects_max: 4
+    extra_absorption_hearts: 8     # +4 уровня ABSORPTION (8 сердец)
+    effect_pool: [SPEED, HASTE, REGENERATION, RESISTANCE, FIRE_RESISTANCE, STRENGTH, DOLPHINS_GRACE, CONDUIT_POWER, HERO_OF_THE_VILLAGE, SATURATION]

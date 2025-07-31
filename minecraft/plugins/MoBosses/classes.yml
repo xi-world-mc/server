@@ -1,0 +1,8 @@
+# Множители по классам Mo'Bosses.
+
+common: { health: 1.0, damage: 1.0, experience: 1.5, color: "WHITE", chance: 63.0, display_name: "Common" }
+uncommon: { health: 1.3, damage: 1.1, experience: 2.0, color: "YELLOW", chance: 28.0, display_name: "Uncommon" }
+rare: { health: 1.6, damage: 1.3, experience: 3.0, color: "AQUA", chance: 9.0, display_name: "Rare" }
+epic: { health: 2.2, damage: 1.7, experience: 4.0, color: "DARK_PURPLE", chance: 3.0, display_name: "Epic" }
+legendary: { health: 3.0, damage: 2.2, experience: 6.0, color: "GOLD", chance: 2.0, display_name: "Legendary" }
+mythic: { health: 4.0, damage: 2.8, experience: 8.0, color: "RED", chance: 1.0, display_name: "Mythic" }

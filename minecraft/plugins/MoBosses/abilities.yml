@@ -1,0 +1,145 @@
+# Настройки способностей Mo'Bosses.
+
+# Включение/выключение способностей
+is_lightning_enabled: true
+is_summoning_enabled: true
+is_regeneration_enabled: true
+is_fire_ring_enabled: true
+is_web_ring_enabled: true
+is_teleport_strike_enabled: true
+is_meteor_shower_enabled: true
+is_arrow_arc_enabled: true
+
+# Пороговые уровни для активации способностей
+lightning_level_threshold: 15
+summoning_level_threshold: 25
+regeneration_level_threshold: 35
+fire_ring_level_threshold: 20
+web_ring_level_threshold: 28
+teleport_strike_level_threshold: 50
+
+# Перезарядка способностей (в миллисекундах)
+general_cooldown: 5000
+general_cooldown_bias: 1.4
+
+lightning_cooldown: 10000
+lightning_cooldown_bias: 1.5
+summoning_cooldown: 20000
+summoning_cooldown_bias: 1.2
+regeneration_cooldown: 30000
+regeneration_cooldown_bias: 1.1
+fire_ring_cooldown: 6000
+fire_ring_cooldown_bias: 1.3
+web_ring_cooldown: 8000
+web_ring_cooldown_bias: 1.4
+teleport_strike_cooldown: 11000
+teleport_strike_cooldown_bias: 1.2
+
+# Настройки молнии
+lightning_damage: 5.0
+lightning_damage_modifier: 0.1
+lightning_damage_max: 20.0
+lightning_radius: 3.0
+lightning_radius_modifier: 0.05
+lightning_radius_max: 10.0
+lightning_strikes: 6
+lightning_strikes_modifier: 0.1
+lightning_strikes_max: 26
+
+# Настройки регенерации
+regeneration_duration_bias: 1.4 # Допустимое отклонение от 5 секунд
+regen_aura_radius: 4.0
+regen_extra_resistance_seconds: 6
+regen_cleanse_negatives: true
+regen_anti_projectiles: true
+regen_slow_players: true
+regen_duration_seconds_base: 8
+regen_duration_seconds_per_level: 0.2
+regen_duration_seconds_max: 20
+regen_amplifier_base: 0
+regen_amplifier_per_level: 0.1
+regen_amplifier_max: 3
+
+# Огненное кольцо
+fire_ring_min_radius: 4.0
+fire_ring_max_radius: 7.0
+fire_ring_density: 0.7
+
+# Паутинное кольцо
+web_ring_radius: 3.0
+web_ring_duration: 8 # секунды
+web_ring_potion_enabled: true
+web_ring_potion_base_duration: 4 # базовая длительность в секундах
+web_ring_potion_max_duration: 10 # максимальная длительность в секундах
+web_ring_potion_level_modifier: 0.06 # прирост длительности за уровень
+
+# Метеоритный дождь
+meteor_shower_level_threshold: 35
+meteor_shower_cooldown: 16000
+meteor_shower_cooldown_bias: 1.2
+meteor_shower_waves_base: 2
+meteor_shower_waves_per_level: 0.03
+meteor_shower_waves_max: 7
+meteor_shower_meteors_per_wave_base: 6
+meteor_shower_meteors_per_wave_per_level: 0.08
+meteor_shower_meteors_per_wave_max: 20
+meteor_shower_radius_base: 6.0
+meteor_shower_radius_per_level: 0.05
+meteor_shower_radius_max: 14.0
+meteor_shower_height: 18.0
+meteor_shower_fall_speed: 1.2  # просто визуальная скорость падения (для тикающих проверок)
+meteor_shower_wave_interval_ticks: 20
+meteor_shower_impact_damage_base: 4.0
+meteor_shower_impact_damage_per_level: 0.12
+meteor_shower_impact_damage_max: 18.0
+meteor_shower_fire_radius: 2.5
+meteor_shower_ignite_seconds: 3
+meteor_shower_meteor_lifetime_seconds: 8
+
+# Кольцо стрел
+arrow_arc_level_threshold: 18
+arrow_arc_cooldown: 7000
+arrow_arc_cooldown_bias: 1.1
+arrow_arc_arrows_base: 18
+arrow_arc_arrows_per_level: 0.20
+arrow_arc_arrows_max: 48
+arrow_arc_rings: 3                 # ← Сколько «ярусов» стрел (равномерно по высоте хитбокса)
+arrow_arc_vertical_spread: 0.0     # при кольце по плоскости лучше 0.0
+arrow_arc_no_gravity: true         # стрелы летят идеально прямо
+arrow_arc_staggered: true  # включить «шахматку»
+arrow_arc_speed: 1.6
+arrow_arc_damage_base: 3.0
+arrow_arc_damage_per_level: 0.05
+arrow_arc_damage_max: 8.0
+arrow_arc_lifetime_seconds: 6   # 0 или <0 — не деспаунить автоматически
+arrow_arc_random_effect_level_threshold: 1   # с какого уровня босса включать «ядовитые» стрелы
+arrow_arc_random_effects_max_per_ring: 16     # не больше 16 на одно кольцо
+arrow_arc_effect_duration_seconds: 6
+arrow_arc_effect_amplifier_min: 0
+arrow_arc_effect_amplifier_max: 1
+arrow_arc_negative_effects: [ SLOWNESS, POISON, WEAKNESS, MINING_FATIGUE, BLINDNESS, HUNGER, WITHER, LEVITATION, NAUSEA, DARKNESS, UNLUCK, BAD_OMEN ] # список допустимых эффектов
+
+# Дождь стрел
+is_arrow_rain_enabled: true
+arrow_rain_level_threshold: 58
+arrow_rain_cooldown: 8000
+arrow_rain_cooldown_bias: 1.1
+arrow_rain_arrows_base: 30
+arrow_rain_arrows_per_level: 0.30
+arrow_rain_arrows_max: 90
+arrow_rain_waves: 2
+arrow_rain_wave_interval_ticks: 20
+arrow_rain_half_size: 8.0        # квадрат 16x16 вокруг цели
+arrow_rain_height: 12.0          # высота спавна стрел
+arrow_rain_fall_speed: 0.9       # стартовая вертикальная скорость вниз
+arrow_rain_damage_base: 2.6
+arrow_rain_damage_per_level: 0.06
+arrow_rain_damage_max: 7.0
+arrow_rain_lifetime_seconds: 6    # <=0 — не удалять
+arrow_rain_random_effect_level_threshold: 35
+arrow_rain_random_effects_max_per_wave: 24
+arrow_rain_effect_duration_seconds: 6
+arrow_rain_effect_amplifier_min: 0
+arrow_rain_effect_amplifier_max: 1
+arrow_rain_negative_effects: [ SLOWNESS, POISON, WEAKNESS, MINING_FATIGUE, BLINDNESS, HUNGER, WITHER, LEVITATION, NAUSEA, DARKNESS, UNLUCK, BAD_OMEN ]
+arrow_rain_target_search_radius: 40.0

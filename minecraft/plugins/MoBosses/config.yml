@@ -1,0 +1,160 @@
+# Общие настройки
+enabled: true
+debug: false
+language: "ru"
+
+# Настройки спавна
+spawn:
+  enabled: true
+  max_bosses_per_world: 10000000
+  spawn_radius: 100
+
+  # Множители для разных миров
+  world_multipliers:
+    world: 1.0
+    world_nether: 1.1
+    world_the_end: 1.3
+
+  # Время суток
+  time_multipliers:
+    day: 0.7
+    night: 1.0
+
+  # Множители для погоды
+  weather_multipliers:
+    clear: 1.0 # Ясная погода
+    rain: 1.1 # Дождь
+    thunder: 1.3 # Гроза
+
+  # Проверка вертикальной зоны (поверхность/пещеры)
+  check_vertical_zone: false
+  # Сколько блоков ниже самой высокой точки считать "поверхностью".
+  # Если моб или игрок ниже этого значения, они считаются в "пещере".
+  vertical_zone_threshold: 14
+
+  # Причины спавна, при которых могут появляться боссы.
+  # Полный список: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+  allowed_spawn_reasons: [ NATURAL, JOCKEY, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, VILLAGE_INVASION, NETHER_PORTAL, DROWNED, RAID, PATROL, COMMAND, CUSTOM ]
+
+progression:
+  # ─────────────────── КРИВАЯ УРОВНЯ ИГРОКА ───────────────────
+  level_curve:
+    max_level: 100       # Максимальный уровень, к которому игрок
+    # плавно приближается (естественный потолок).
+    exp_scale: 30.0      # Делитель вклада √XP: ↑значение→медленнее рост
+    # при том же количестве накопленного XP.
+    kill_scale: 20.0      # Делитель вклада количества убийств боссов:
+    # ↓значение→киллы сильнее влияют на уровень.
+    power: 1.3           # «Крутизна» кривой (p). Чем выше, тем резче
+    # разгон во второй половине пути к max_level.
+    offset: 20.0         # Смещение точки перегиба (K). ↑число→дольше
+    # остаёмся на низких уровнях.
+
+  # ───────────── XP‑ПРИРОСТ ЗА УБИЙСТВО ОДНОГО БОССА ─────────────
+  exp_gain:
+    health_factor: 0.01   # Сколько «внутреннего XP» даётся за каждую
+    # единицу максимальных HP босса.
+    level_factor: 0.005   # Базовый вклад уровня босса.
+    level_power: 2.0      # Степень уровня
+    rarity_mul: true     # true→ результат дополнительно умножается
+    # на classes.<…>.experience.
+
+  # ──────────────── ВАРИАЦИЯ УРОВНЯ СПАВНЯЩИХСЯ БОССОВ ────────────────
+  variance:
+    base_chance: 0.10    # Базовый шанс (на 1‑м уровне игрока) того,
+    # что босс появится c уменьшенным уровнем.
+    extra_chance: 0.35   # Доп. шанс, добавляющийся к base_chance к
+    # моменту, когда игрок достигнет 100‑го уровня.
+    min_reduction: 5     # Минимальное понижение уровня, если вариация
+    # сработала (например 100→95).
+    max_reduction: 80    # Максимальное возможное понижение уровня
+    # при 100‑м уровне игрока (100→20).
+    power: 1.2           # Формирует кривую расширения диапазона:
+    # >1→разброс растёт медленнее в начале
+    #      и быстрее к хай‑лвлам.
+
+formula:
+  # ─────────────────────────  Ж И З Н И  ─────────────────────────
+  health:
+    max_scale: 20.0      # Smax — асимптота множителя уровня. При
+    power: 1.8           # p — крутизна «трамплина».
+    offset: 400.0        # K — чем выше, тем дольше рост остаётся
+    # медленным на низких уровнях.
+    flatten: 0.35        # 0= полное сохранение разницы классов.
+    # 1= к 100-м лвлу классовый буст почти схлопнется.
+
+  # ─────────────────────────  У Р О Н  ──────────────────────────
+  damage:
+    max_scale: 6.0       # Потолок множителя уровня для урона.
+    power: 1.2
+    offset: 600.0
+    flatten: 0.40        # Сильнее сплющиваем разницу классов,
+    # чтобы Mythic не бил ×3 на 100‑м уровне.
+
+  # ──────────────────────  MINECRAFT‑XP ДРОП  ───────────────────
+  experience:
+    max_scale: 270.0     # Новый Smax для XP – 12k на Mythic-100
+    power: 2.0
+    offset: 1000.0       # Сильнее сглаживаем прирост на ранних уровнях
+    # Длинный «разгон»: ранние уровни дают
+    # умеренно больше опыта, хай-лвлы — ощутимо.
+
+  # ──────────────────────  Множитель Спавна Миньонов  ───────────────────
+  minions:
+    base_count: 2
+    max_count: 12
+    power: 1.2     # p — как быстро разгоняемся
+    offset: 80.0   # K — чем выше, тем дольше остаёмся внизу
+    variance: 0.15 # +-15% случайная вилка вокруг расчёта
+
+# Визуальные эффекты
+effects:
+  particles:
+    enabled: true
+    update_interval: 20  # тики
+
+  glow:
+    enabled: true
+    # Классы боссов, для которых включен glow эффект (пустой список = все классы)
+    # Доступные классы: common, uncommon, rare, epic, legendary, mythic
+    classes: [ uncommon, rare, epic, legendary, mythic ]
+
+  # Радиус видимости эффектов (в блоках). Эффекты будут применяться только
+  # если в данном радиусе от босса есть хотя бы один игрок
+  visibility_radius: 32
+
+# Боссбар
+boss_bar:
+  enabled: true
+  style: "SEGMENTED_20"
+
+# Система лута
+loot:
+  # Случайный износ предметов
+  random_durability:
+    enabled: true
+    min_durability: 0.1  # 10% минимальная прочность
+    max_durability: 0.9  # 90% максимальная прочность
+
+# Базы данных
+database:
+  type: "sqlite"  # sqlite, mysql, postgres
+
+  sqlite:
+    file: "bosses.db"
+
+  # Настройки MySQL (если используется)
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "mobosses"
+    username: "root"
+    password: "password"
+
+  postgres:
+    host: "localhost"
+    port: 5432
+    database: "mobosses"
+    username: "mobosses"
+    password: "secret"
+    ssl: false

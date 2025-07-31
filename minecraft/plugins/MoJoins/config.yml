@@ -1,0 +1,59 @@
+###############################################################################
+#                          Mo’Joins Configuration                             #
+###############################################################################
+# Плагин для кастомизации входа/выхода игроков: сообщения, звуки, эффекты,
+# визуалы (частицы/фейерверк). Формат сообщений — MiniMessage.
+
+enabled: true        # Включает/выключает плагин целиком.
+debug: false         # Подробное логирование (в т.ч. отладочные сообщения).
+
+messages:
+  # Сообщение о входе игрока (каждый раз). <player> — ник игрока.
+  join: "<gradient:#00E676:#00C853>➕</gradient> <color:#1ABC9C><bold><player></bold></color> <gray>присоединился к игре!</gray>"
+
+  # Сообщение о первом входе.
+  first_join: |-
+    <gradient:#00E676:#00C853>★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★</gradient>
+
+    <gradient:#00E676:#1ABC9C>✦</gradient> <white>Добро пожаловать, </white><color:#1ABC9C><bold><player></bold></color><white>!</white>
+
+    <gray>Мы рады видеть вас на сервере — приятной игры!</gray>
+
+    <gradient:#00E676:#1ABC9C>★</gradient> <white>— Уважайте других игроков.</white>
+    <gradient:#00E676:#1ABC9C>★</gradient> <white>— Стройте с умом и бережно относитесь к миру.</white>
+
+    <gradient:#00C853:#00E676>★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★</gradient>
+
+  # Сообщение об отключении игрока.
+  quit: "<gradient:#26A69A:#00897B>➖</gradient> <color:#1ABC9C><bold><player></bold></color> <gray>покинул игру!</gray>"
+
+  system:
+    # Служебные сообщения для команд/перезагрузки.
+    permission: "<red>Недостаточно прав.</red>"
+    incorrect: "<yellow>Неверная команда.</yellow> <gray>Используйте:</gray> <white>/mojoins reload</white>"
+    reloaded: "<green>Настройки перезагружены.</green>"
+    reload_failed: "<red>Перезагрузка не удалась.</red> <gray>Проверьте логи сервера.</gray>"
+
+# Список эффектов, применяемых каждый раз при входе.
+# name: тип (например, resistance, saturation, speed, haste, fire_resistance, absorption и т.п.)
+# duration: длительность в секундах
+# amplifier: уровень (0 = базовый)
+effects:
+  - { name: resistance, duration: 10, amplifier: 2 }
+
+sounds:
+  # Звук при обычном входе.
+  join: { enabled: true, key: "minecraft:entity.experience_orb.pickup", volume: 1.0, pitch: 1.0 }
+  # Звук при первом входе.
+  first_join: { enabled: true, key: "minecraft:entity.player.levelup", volume: 1.0, pitch: 1.0 }
+
+visuals:
+  # Частицы — один «венок» из точек вокруг игрока при входе.
+  particles: { enabled: true, type: "minecraft:happy_villager", ring: { radius: 1.5, points: 12 } }
+  # Фейерверк — взлетает над игроком при входе.
+  # type: BALL | BALL_LARGE | STAR | BURST | CREEPER
+  # colors / fade_colors: цвета вспышки/затухания — hex (#RRGGBB) или имена (red, lime, sky, …)
+  firework: { enabled: true, power: 1, type: BALL, flicker: true, trail: true, colors: [ "#FFD54F", "#FFFFFF" ], fade_colors: [ "#FFA000" ] }
+
+# Управление широковещательной отправкой join/first_join/quit.
+broadcast: { join_enabled: true, first_join_enabled: true, quit_enabled: true }

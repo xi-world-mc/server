@@ -14,26 +14,26 @@
 #   <xp>   … </xp>    — внутренний опыт Mo'Bosses
 
 general:
-  plugin_disabled: "<pri>[Mo'Bosses]</pri> <warn>Плагин выключен!</warn>"
-  config_reloaded: "<pri>[Mo'Bosses]</pri> <ok>Конфигурация перезагружена!</ok>"
-  no_permission: "<err>У вас нет прав для выполнения этой команды!</err>"
-  killall_success: "<pri>[Mo'Bosses]</pri> <ok>Убито <num>{count}</num> боссов!</ok>"
-  killall_no_bosses: "<pri>[Mo'Bosses]</pri> <warn>Нет активных боссов для убийства.</warn>"
+  plugin_disabled: "<red><bold>🐉 <gold><bold>[Mo'Bosses] Плагин выключен! <red><bold>[Mo'Bosses] 插件已关闭! 🐲"
+  config_reloaded: "<green><bold>✨ <dark_green><bold>[Mo'Bosses] Конфигурация перезагружена! <green><bold>[Mo'Bosses] 配置已重新加载! 🎋"
+  no_permission: "<red><bold>🏮 <gold><bold>У вас нет прав! <red><bold>你在習世界 没有权限! 🏮"
+  killall_success: "<green><bold>⚔ <dark_green><bold>[Mo'Bosses] Убито <num>{count}</num> боссов! <green><bold>[Mo'Bosses] 杀死了{count}个BOSS! <dark_green><bold>🐉"
+  killall_no_bosses: "<red><bold>🎋 <yellow><bold>[Mo'Bosses] Нет активных боссов! <red><bold>[Mo'Bosses] 没有活跃的BOSS! 🎋"
 
 boss:
   loot:
     # Плейсхолдеры: player, itemstack
-    rare_drop: "<pri>[Mo'Bosses]</pri> Игрок <ok><player></ok> получил <item>редкий</item> лут: <item><itemstack></item>!"
-    epic_drop: "<pri>[Mo'Bosses]</pri> Игрок <ok><player></ok> получил <bold><light_purple>эпический</light_purple></bold> лут: <item><itemstack></item>!"
-    legendary_drop: "<pri>[Mo'Bosses]</pri> Игрок <ok><player></ok> получил <bold><gold>легендарный</gold></bold> лут: <item><itemstack></item>!"
-    mythic_drop: "<pri>[Mo'Bosses]</pri> Игрок <ok><player></ok> получил <bold><gradient:#ff0080:#8000ff>мифический</gradient></bold> лут: <item><itemstack></item>!"
+    rare_drop: "<red><bold>🏮 <gold><bold>[Mo'Bosses] <player> получил редкий лут: <itemstack>! <red><bold>[Mo'Bosses] <player>获得稀有战利品: <itemstack>! 🏮"
+    epic_drop: "<red><bold>🐉 <gold><bold>[Mo'Bosses] <player> получил <bold><light_purple>эпический</light_purple></bold> лут: <itemstack>! <red><bold>[Mo'Bosses] <player>获得史诗战利品: <itemstack>! 🐲"
+    legendary_drop: "<red><bold>⚔ <gold><bold>[Mo'Bosses] <player> получил <bold><gold>легендарный</gold></bold> лут: <itemstack>! <red><bold>[Mo'Bosses] <player>获得传奇战利品: <itemstack>! <yellow><bold>⚔"
+    mythic_drop: "<red><bold>✨ <gold><bold>[Mo'Bosses] <player> получил <bold><gradient:#ff0080:#8000ff>мифический</gradient></bold> лут: <itemstack>! <red><bold>[Mo'Bosses] <player>获得神话战利品: <itemstack>! <green><bold>🎋"
     enabled: true
 
   death:
     killed:
       broadcast:
         # Плейсхолдеры: player, boss_name, level, class
-        message: "<pri>[Mo'Bosses]</pri> Игрок <ok><player></ok> победил босса <boss><boss_name></boss> уровня <num>Lv. <level></num>/<class> и получил <xp><experience></xp> опыта!"
+        message: "<green><bold>🐉 <dark_green><bold>[Mo'Bosses] <player> победил босса <boss_name> уровня Lv. <level>/<class>! <green><bold>[Mo'Bosses] <player>击败了<level>级BOSS <boss_name>/<class>! <dark_green><bold>получил <experience> опыта! 🐲"
         enabled: true
       enabled: true
       sound: "UI_TOAST_CHALLENGE_COMPLETE"
@@ -41,12 +41,12 @@ boss:
 
   abilities:
     # Плейсхолдеры: boss_name
-    lightning: "<boss><boss_name></boss> использует <item>Молнию</item>!"
-    regeneration: "<boss><boss_name></boss> начинает <hp>регенерацию</hp>!"
-    summon_minions: "<boss><boss_name></boss> призывает миньонов!"
-    fire_ring: "<boss><boss_name></boss> создает кольцо огня!"
-    web_ring: "<boss><boss_name></boss> создает кольцо паутины!"
-    teleport_strike: "<boss><boss_name></boss> использует <item>Приемы ниндзя</item>!"
-    meteor_shower: "<boss><boss_name></boss> вызывает <item>метеоритный дождь</item>!"
-    arrow_arc: "<boss><boss_name></boss> выпускает <item>дуговой залп</item>!"
-    arrow_rain: "<boss><boss_name></boss> обрушивает <item>дождь стрел</item>!"
+    lightning: "<red><bold>⚔ <gold><bold>Босс <boss_name> использует Молнию! <red><bold>BOSS <boss_name>使用闪电! <yellow><bold>⚔"
+    regeneration: "<green><bold>🎋 <dark_green><bold>Босс <boss_name> начинает регенерацию! <green><bold>BOSS <boss_name>开始再生! 🎋"
+    summon_minions: "<red><bold>🐉 <gold><bold>Босс <boss_name> призывает миньонов! <red><bold>BOSS <boss_name>召唤手下! 🐲"
+    fire_ring: "<red><bold>🏮 <gold><bold>Босс <boss_name> создает кольцо огня! <red><bold>BOSS <boss_name>创造火环! 🏮"
+    web_ring: "<red><bold>✨ <yellow><bold>Босс <boss_name> создает кольцо паутины! <red><bold>BOSS <boss_name>创造蛛网环! <green><bold>✨"
+    teleport_strike: "<red><bold>⚔ <gold><bold>Босс <boss_name> использует Приемы ниндзя! <red><bold>BOSS <boss_name>使用忍术! <yellow><bold>⚔"
+    meteor_shower: "<red><bold>🐉 <gold><bold>Босс <boss_name> вызывает метеоритный дождь! <red><bold>BOSS <boss_name>召唤流星雨! 🐲"
+    arrow_arc: "<red><bold>🏮 <gold><bold>Босс <boss_name> выпускает дуговой залп! <red><bold>BOSS <boss_name>释放弧形齐射! 🏮"
+    arrow_rain: "<red><bold>🎋 <gold><bold>Босс <boss_name> обрушивает дождь стрел! <red><bold>BOSS <boss_name>降下箭雨! <green><bold>🎋"

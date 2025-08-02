@@ -9,7 +9,7 @@ debug: false         # Подробное логирование (в т.ч. от
 
 messages:
   # Сообщение о входе игрока (каждый раз). <player> — ник игрока.
-  join: "<green><bold>✨ <dark_green><bold><player> присоединился к Xi World! <green><bold><player>加入了習世界! <dark_green><bold>🐉"
+  join: "<green><bold>✨ <dark_green><bold><player> присоединился к Xi World! <green><bold><player> 加入了習世界! <dark_green><bold>🐉"
 
   # Сообщение о первом входе.
   first_join: |-
@@ -26,7 +26,7 @@ messages:
     <red><bold>🏮 🐉 🎋 ✨ 🐲 🏮 🐉 🎋 ✨ 🐲 🏮</red>
 
   # Сообщение об отключении игрока.
-  quit: "<red><bold>⚔ <gold><bold><player> покинул Xi World! <red><bold><player>离开了習世界! <yellow><bold>⚔"
+  quit: "<red><bold>⚔ <gold><bold><player> покинул Xi World! <red><bold><player> 离开了習世界! <yellow><bold>⚔"
 
   system:
     # Служебные сообщения для команд/перезагрузки.

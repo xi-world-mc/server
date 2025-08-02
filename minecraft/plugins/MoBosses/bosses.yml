@@ -1,7 +1,7 @@
 # Конфигурация боссов Mo'Bosses
 
 ZOMBIE:
-  name: "Гнилой"
+  name: "Гнилой 僵尸"
   enabled: true
   spawn_chance: 0.09 # 9%
   exp_modifier: 1.0
@@ -129,7 +129,7 @@ ZOMBIE:
       summon: "ENTITY_ZOMBIE_VILLAGER_CURE"
 
 SKELETON:
-  name: "Костян"
+  name: "Костян 骷髅"
   enabled: true
   spawn_chance: 0.09 # 9%
   exp_modifier: 0.7
@@ -206,7 +206,7 @@ SKELETON:
       summon: "ENTITY_STRAY_AMBIENT"
 
 PIGLIN:
-  name: "Свиноголовый"
+  name: "Свиноголовый 猪灵"
   enabled: false
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.4
@@ -272,7 +272,7 @@ PIGLIN:
       summon: "ENTITY_PIGLIN_BRUTE_AMBIENT"
 
 PILLAGER:
-  name: "Бандюган"
+  name: "Бандюган 掠夺者"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.7
@@ -321,7 +321,7 @@ PILLAGER:
       summon: "ENTITY_VINDICATOR_AMBIENT"
 
 SPIDER:
-  name: "Паукан"
+  name: "Паукан 蜘蛛"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.377
@@ -333,7 +333,7 @@ SPIDER:
       summon: "AMBIENT_CAVE"
 
 ENDERMAN:
-  name: "Шпала"
+  name: "Шпала 末影人"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.4
@@ -345,7 +345,7 @@ ENDERMAN:
       summon: "ENTITY_ENDERMAN_TELEPORT"
 
 WITHER_SKELETON:
-  name: "Босс иссушитель"
+  name: "Босс иссушитель 凋灵骷髅"
   enabled: true
   spawn_chance: 0.09 # 9%
   exp_modifier: 0.688
@@ -401,7 +401,7 @@ WITHER_SKELETON:
       summon: "ENTITY_WITHER_SPAWN"
 
 VINDICATOR:
-  name: "Херобрин"
+  name: "Херобрин 卫道士"
   enabled: true
   spawn_chance: 0.13 # 13%
   exp_modifier: 1.0
@@ -436,7 +436,7 @@ VINDICATOR:
       summon: "ENTITY_EVOKER_FANGS_ATTACK"
 
 STRAY:
-  name: "Отмороженный"
+  name: "Отмороженный 流浪者"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.733
@@ -463,7 +463,7 @@ STRAY:
       summon: "BLOCK_SNOW_BREAK"
 
 CREEPER:
-  name: "Рико"
+  name: "Рико 苦力怕"
   enabled: true
   spawn_chance: 0.11 # 11%
   is_powered: true # Будет ли крипер заряженным
@@ -476,7 +476,7 @@ CREEPER:
       summon: "ENTITY_CREEPER_PRIMED"
 
 HUSK:
-  name: "Пустынник"
+  name: "Пустынник 尸壳"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.9
@@ -522,7 +522,7 @@ HUSK:
       summon: "ENTITY_HUSK_CONVERTED_TO_ZOMBIE"
 
 WITCH:
-  name: "Жрица"
+  name: "Жрица 女巫"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 0.377
@@ -576,7 +576,7 @@ WITCH:
       summon: "ENTITY_WITCH_DRINK"
 
 DROWNED:
-  name: "Затонувший"
+  name: "Затонувший 溺尸"
   enabled: true
   spawn_chance: 0.10 # 10%
   exp_modifier: 1.0
@@ -630,7 +630,7 @@ DROWNED:
       summon: "ENTITY_DROWNED_SHOOT"
 
 EVOKER:
-  name: "Джаггернаут"
+  name: "Джаггернаут 唤魔者"
   enabled: true
   spawn_chance: 0.10 # 10%
   exp_modifier: 0.7
@@ -650,7 +650,7 @@ EVOKER:
       summon: "ENTITY_EVOKER_PREPARE_SUMMON"
 
 PHANTOM:
-  name: "БПЛА"
+  name: "БПЛА 幻翼"
   enabled: true
   spawn_chance: 0.12 # 12%
   exp_modifier: 0.3
@@ -662,7 +662,7 @@ PHANTOM:
       summon: "ENTITY_PHANTOM_FLAP"
 
 VEX:
-  name: "Дух"
+  name: "Дух 恼鬼"
   enabled: true
   spawn_chance: 0.10 # 10%
   exp_modifier: 0.766
@@ -697,7 +697,7 @@ VEX:
       summon: "ENTITY_VEX_CHARGE"
 
 ZOMBIE_VILLAGER:
-  name: "Зомбачелло"
+  name: "Зомбачелло 僵尸村民"
   enabled: true
   spawn_chance: 0.11 # 11%
   exp_modifier: 1.0

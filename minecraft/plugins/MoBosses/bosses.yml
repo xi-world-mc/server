@@ -1,9 +1,10 @@
 # Конфигурация боссов Mo'Bosses
 
 ZOMBIE:
-  name: "Зомбак"
+  name: "Гнилой"
   enabled: true
   spawn_chance: 0.09 # 9%
+  exp_modifier: 1.0
   equipment:
     weapons:
       - { material: "WOODEN_SWORD", min_lvl: 1 }
@@ -131,30 +132,51 @@ SKELETON:
   name: "Костян"
   enabled: true
   spawn_chance: 0.09 # 9%
+  exp_modifier: 0.7
   equipment:
     weapons:
-      - { material: "BOW", min_lvl: 1, enchantments: { power: 1 } }
-      - { material: "BOW", min_lvl: 5, enchantments: { power: 1, punch: 1 } }
+      - { material: "BOW", min_lvl: 1,  enchantments: { power: 1 } }
+      - { material: "BOW", min_lvl: 3,  enchantments: { power: 1, unbreaking: 1 } }
+      - { material: "BOW", min_lvl: 5,  enchantments: { power: 1, punch: 1 } }
       - { material: "BOW", min_lvl: 12, enchantments: { power: 2 } }
       - { material: "BOW", min_lvl: 15, enchantments: { power: 2, punch: 1 } }
+      - { material: "BOW", min_lvl: 18, enchantments: { power: 2, punch: 1, unbreaking: 1 } }
+      - { material: "BOW", min_lvl: 20, enchantments: { power: 2, unbreaking: 1 } }
       - { material: "BOW", min_lvl: 22, enchantments: { power: 2, flame: 1 } }
       - { material: "BOW", min_lvl: 25, enchantments: { power: 2, punch: 1, unbreaking: 1 } }
       - { material: "BOW", min_lvl: 28, enchantments: { power: 2, punch: 2 } }
+      - { material: "BOW", min_lvl: 30, enchantments: { power: 3 } }
+      - { material: "BOW", min_lvl: 33, enchantments: { power: 3, unbreaking: 1 } }
       - { material: "BOW", min_lvl: 35, enchantments: { power: 3, flame: 1 } }
       - { material: "BOW", min_lvl: 38, enchantments: { power: 3, punch: 1, flame: 1 } }
+      - { material: "BOW", min_lvl: 40, enchantments: { power: 3, punch: 2 } }
       - { material: "BOW", min_lvl: 42, enchantments: { power: 3, punch: 2, unbreaking: 1 } }
+      - { material: "BOW", min_lvl: 45, enchantments: { power: 3, punch: 2, unbreaking: 2 } }
       - { material: "BOW", min_lvl: 48, enchantments: { power: 3, infinity: 1 } }
       - { material: "BOW", min_lvl: 52, enchantments: { power: 3, punch: 2, flame: 1 } }
       - { material: "BOW", min_lvl: 55, enchantments: { power: 3, punch: 2 } }
+      - { material: "BOW", min_lvl: 58, enchantments: { power: 4, punch: 1 } }
+      - { material: "BOW", min_lvl: 60, enchantments: { power: 4, unbreaking: 2 } }
       - { material: "BOW", min_lvl: 62, enchantments: { power: 4, flame: 1, unbreaking: 2 } }
       - { material: "BOW", min_lvl: 65, enchantments: { power: 4, infinity: 1, punch: 1 } }
+      - { material: "BOW", min_lvl: 68, enchantments: { power: 4, infinity: 1, unbreaking: 2 } }
+      - { material: "BOW", min_lvl: 70, enchantments: { power: 4, punch: 2, unbreaking: 2 } }
       - { material: "BOW", min_lvl: 72, enchantments: { power: 4, punch: 2, flame: 1, unbreaking: 2 } }
-      - { material: "BOW", min_lvl: 78, enchantments: { power: 4, infinity: 1, flame: 1 } }
-      - { material: "BOW", min_lvl: 80, enchantments: { power: 4, flame: 1 } }
-      - { material: "BOW", min_lvl: 85, enchantments: { power: 5, punch: 1, infinity: 1, unbreaking: 2 } }
+      - { material: "BOW", min_lvl: 74, enchantments: { power: 4, punch: 2, flame: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 76, enchantments: { power: 5, punch: 2, flame: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 78, enchantments: { power: 5, infinity: 1, flame: 1 } }
+      - { material: "BOW", min_lvl: 80, enchantments: { power: 5, flame: 1 } }
+      - { material: "BOW", min_lvl: 82, enchantments: { power: 5 } }
+      - { material: "BOW", min_lvl: 85, enchantments: { power: 6, punch: 1, infinity: 1, unbreaking: 2 } }
       - { material: "BOW", min_lvl: 88, enchantments: { power: 5, flame: 1, punch: 2, unbreaking: 3 } }
-      - { material: "BOW", min_lvl: 95, enchantments: { power: 5, flame: 1, infinity: 1 } }
-      - { material: "BOW", min_lvl: 98, enchantments: { power: 5, punch: 2, flame: 1, infinity: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 90, enchantments: { power: 6, punch: 2, flame: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 92, enchantments: { power: 6, infinity: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 94, enchantments: { power: 6, punch: 2, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 95, enchantments: { power: 7, flame: 1, infinity: 1 } }
+      - { material: "BOW", min_lvl: 96, enchantments: { power: 7, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 98, enchantments: { power: 7, punch: 2, flame: 1, infinity: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 99, enchantments: { power: 7, punch: 2, flame: 1, unbreaking: 3 } }
+      - { material: "BOW", min_lvl: 100, enchantments: { power: 8, infinity: 1, punch: 2, flame: 1, unbreaking: 3 } }
     armors:
       - { min_lvl: 1, helmet: { material: "LEATHER_HELMET" } }
       - { min_lvl: 5, boots: { material: "LEATHER_BOOTS", enchantments: { feather_falling: 1 } } }
@@ -185,8 +207,9 @@ SKELETON:
 
 PIGLIN:
   name: "Свиноголовый"
-  enabled: true
+  enabled: false
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.4
   equipment:
     weapons:
       - { material: "GOLDEN_SWORD", min_lvl: 1, enchantments: { sharpness: 2 } }
@@ -252,79 +275,44 @@ PILLAGER:
   name: "Бандюган"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.7
   equipment:
     weapons:
-      - { material: "WOODEN_AXE", min_lvl: 1 }
-      - { material: "WOODEN_SWORD", min_lvl: 3 }
-      - { material: "STONE_AXE", min_lvl: 5 }
-      - { material: "STONE_SWORD", min_lvl: 7 }
-      - { material: "CROSSBOW", min_lvl: 9 }
-      - { material: "STONE_AXE", min_lvl: 11, enchantments: { efficiency: 1 } }
-      - { material: "STONE_SWORD", min_lvl: 13, enchantments: { sharpness: 1 } }
-      - { material: "IRON_AXE", min_lvl: 15, enchantments: { sharpness: 1 } }
+      - { material: "CROSSBOW", min_lvl: 1 }
+      - { material: "CROSSBOW", min_lvl: 8,  enchantments: { unbreaking: 1 } }
+      - { material: "CROSSBOW", min_lvl: 12, enchantments: { piercing: 1 } }
       - { material: "CROSSBOW", min_lvl: 17, enchantments: { quick_charge: 1 } }
-      - { material: "IRON_SWORD", min_lvl: 19, enchantments: { sharpness: 1 } }
-      - { material: "IRON_AXE", min_lvl: 21, enchantments: { sharpness: 1, efficiency: 2 } }
-      - { material: "STONE_SWORD", min_lvl: 23, enchantments: { sharpness: 2, knockback: 1 } }
-      - { material: "CROSSBOW", min_lvl: 25, enchantments: { quick_charge: 1 } }
-      - { material: "IRON_AXE", min_lvl: 27, enchantments: { sharpness: 2 } }
-      - { material: "IRON_SWORD", min_lvl: 29, enchantments: { sharpness: 2 } }
-      - { material: "CROSSBOW", min_lvl: 31, enchantments: { piercing: 1 } }
-      - { material: "IRON_AXE", min_lvl: 33, enchantments: { sharpness: 2, unbreaking: 1 } }
-      - { material: "IRON_SWORD", min_lvl: 35, enchantments: { sharpness: 2, knockback: 1 } }
+      - { material: "CROSSBOW", min_lvl: 20, enchantments: { piercing: 1, unbreaking: 1 } }
+      - { material: "CROSSBOW", min_lvl: 24, enchantments: { quick_charge: 1, unbreaking: 1 } }
+      - { material: "CROSSBOW", min_lvl: 28, enchantments: { piercing: 2 } }
+      - { material: "CROSSBOW", min_lvl: 31, enchantments: { quick_charge: 2 } }
+      - { material: "CROSSBOW", min_lvl: 34, enchantments: { piercing: 2, unbreaking: 1 } }
       - { material: "CROSSBOW", min_lvl: 37, enchantments: { quick_charge: 2 } }
-      - { material: "IRON_SWORD", min_lvl: 40, enchantments: { sharpness: 2, knockback: 1 } }
-      - { material: "IRON_AXE", min_lvl: 42, enchantments: { sharpness: 3, efficiency: 3 } }
+      - { material: "CROSSBOW", min_lvl: 40, enchantments: { piercing: 2, quick_charge: 1, unbreaking: 1 } }
       - { material: "CROSSBOW", min_lvl: 44, enchantments: { piercing: 1, quick_charge: 1 } }
-      - { material: "DIAMOND_SWORD", min_lvl: 46, enchantments: { sharpness: 2 } }
-      - { material: "IRON_AXE", min_lvl: 48, enchantments: { sharpness: 3, knockback: 1, unbreaking: 2 } }
+      - { material: "CROSSBOW", min_lvl: 46, enchantments: { quick_charge: 3 } }
       - { material: "CROSSBOW", min_lvl: 50, enchantments: { multishot: 1 } }
-      - { material: "DIAMOND_AXE", min_lvl: 52, enchantments: { sharpness: 2 } }
-      - { material: "DIAMOND_SWORD", min_lvl: 54, enchantments: { sharpness: 3, knockback: 1 } }
+      - { material: "CROSSBOW", min_lvl: 52, enchantments: { piercing: 3 } }
       - { material: "CROSSBOW", min_lvl: 55, enchantments: { multishot: 1, quick_charge: 2 } }
-      - { material: "DIAMOND_AXE", min_lvl: 57, enchantments: { sharpness: 3, efficiency: 2 } }
-      - { material: "DIAMOND_SWORD", min_lvl: 59, enchantments: { sharpness: 3, unbreaking: 1 } }
+      - { material: "CROSSBOW", min_lvl: 58, enchantments: { piercing: 3, unbreaking: 2 } }
       - { material: "CROSSBOW", min_lvl: 61, enchantments: { piercing: 2, quick_charge: 1 } }
-      - { material: "DIAMOND_AXE", min_lvl: 63, enchantments: { sharpness: 3, knockback: 1, unbreaking: 1 } }
-      - { material: "DIAMOND_SWORD", min_lvl: 65, enchantments: { sharpness: 4, knockback: 1 } }
+      - { material: "CROSSBOW", min_lvl: 64, enchantments: { multishot: 1, unbreaking: 2 } }
       - { material: "CROSSBOW", min_lvl: 67, enchantments: { multishot: 1, piercing: 1 } }
-      - { material: "DIAMOND_SWORD", min_lvl: 70, enchantments: { sharpness: 3 } }
-      - { material: "DIAMOND_AXE", min_lvl: 72, enchantments: { sharpness: 4, efficiency: 4 } }
+      - { material: "CROSSBOW", min_lvl: 70, enchantments: { piercing: 3, quick_charge: 2, unbreaking: 2 } }
+      - { material: "CROSSBOW", min_lvl: 72, enchantments: { quick_charge: 3, unbreaking: 2 } }
       - { material: "CROSSBOW", min_lvl: 74, enchantments: { piercing: 2, quick_charge: 2 } }
-      - { material: "NETHERITE_SWORD", min_lvl: 76, enchantments: { sharpness: 3 } }
-      - { material: "DIAMOND_AXE", min_lvl: 78, enchantments: { sharpness: 4, knockback: 1, unbreaking: 2 } }
+      - { material: "CROSSBOW", min_lvl: 76, enchantments: { multishot: 1, quick_charge: 3 } }
       - { material: "CROSSBOW", min_lvl: 80, enchantments: { multishot: 1, piercing: 2 } }
-      - { material: "NETHERITE_AXE", min_lvl: 82, enchantments: { sharpness: 3 } }
-      - { material: "NETHERITE_SWORD", min_lvl: 84, enchantments: { sharpness: 4, knockback: 1 } }
-      - { material: "DIAMOND_AXE", min_lvl: 85, enchantments: { sharpness: 4, unbreaking: 1 } }
+      - { material: "CROSSBOW", min_lvl: 82, enchantments: { piercing: 4 } }
+      - { material: "CROSSBOW", min_lvl: 85, enchantments: { multishot: 1, piercing: 2, quick_charge: 2, unbreaking: 3 } }
       - { material: "CROSSBOW", min_lvl: 87, enchantments: { multishot: 1, piercing: 3, quick_charge: 2 } }
-      - { material: "NETHERITE_SWORD", min_lvl: 89, enchantments: { sharpness: 4, unbreaking: 2 } }
-      - { material: "NETHERITE_AXE", min_lvl: 91, enchantments: { sharpness: 4, efficiency: 3 } }
+      - { material: "CROSSBOW", min_lvl: 90, enchantments: { multishot: 1, piercing: 3, quick_charge: 3, unbreaking: 3 } }
       - { material: "CROSSBOW", min_lvl: 93, enchantments: { multishot: 1, piercing: 3, unbreaking: 2 } }
       - { material: "CROSSBOW", min_lvl: 95, enchantments: { multishot: 1, piercing: 4 } }
-      - { material: "NETHERITE_SWORD", min_lvl: 97, enchantments: { sharpness: 5, knockback: 2, unbreaking: 3 } }
-      - { material: "NETHERITE_AXE", min_lvl: 99, enchantments: { sharpness: 5, efficiency: 5, unbreaking: 3 } }
-    armors:
-      - { min_lvl: 5, boots: { material: "LEATHER_BOOTS" } }
-      - { min_lvl: 8, helmet: { material: "LEATHER_HELMET" } }
-      - { min_lvl: 10, chestplate: { material: "LEATHER_CHESTPLATE" } }
-      - { min_lvl: 15, leggings: { material: "LEATHER_LEGGINGS" }, boots: { material: "LEATHER_BOOTS", enchantments: { feather_falling: 2 } } }
-      - { min_lvl: 18, helmet: { material: "CHAINMAIL_HELMET" }, chestplate: { material: "LEATHER_CHESTPLATE" } }
-      - { min_lvl: 20, helmet: { material: "IRON_HELMET" }, boots: { material: "IRON_BOOTS" } }
-      - { min_lvl: 25, chestplate: { material: "CHAINMAIL_CHESTPLATE" }, leggings: { material: "CHAINMAIL_LEGGINGS" } }
-      - { min_lvl: 30, helmet: { material: "IRON_HELMET", enchantments: { protection: 1 } }, chestplate: { material: "CHAINMAIL_CHESTPLATE" }, boots: { material: "IRON_BOOTS", enchantments: { feather_falling: 2 } } }
-      - { min_lvl: 35, chestplate: { material: "IRON_CHESTPLATE", enchantments: { protection: 1 } }, leggings: { material: "CHAINMAIL_LEGGINGS" } }
-      - { min_lvl: 40, helmet: { material: "IRON_HELMET", enchantments: { protection: 2 } }, chestplate: { material: "IRON_CHESTPLATE", enchantments: { protection: 1, thorns: 1 } }, leggings: { material: "IRON_LEGGINGS" } }
-      - { min_lvl: 45, helmet: { material: "DIAMOND_HELMET", enchantments: { protection: 1 } }, boots: { material: "IRON_BOOTS", enchantments: { protection: 2 } } }
-      - { min_lvl: 50, helmet: { material: "DIAMOND_HELMET", enchantments: { protection: 2 } }, chestplate: { material: "IRON_CHESTPLATE", enchantments: { protection: 2 } } }
-      - { min_lvl: 55, helmet: { material: "DIAMOND_HELMET", enchantments: { protection: 2, respiration: 1 } }, leggings: { material: "DIAMOND_LEGGINGS", enchantments: { protection: 1 } }, boots: { material: "DIAMOND_BOOTS" } }
-      - { min_lvl: 60, chestplate: { material: "DIAMOND_CHESTPLATE", enchantments: { protection: 2, unbreaking: 1 } }, leggings: { material: "DIAMOND_LEGGINGS", enchantments: { protection: 2 } } }
-      - { min_lvl: 65, helmet: { material: "DIAMOND_HELMET", enchantments: { protection: 3 } }, chestplate: { material: "DIAMOND_CHESTPLATE", enchantments: { protection: 3, thorns: 1 } }, leggings: { material: "DIAMOND_LEGGINGS", enchantments: { protection: 2 } } }
-      - { min_lvl: 72, helmet: { material: "DIAMOND_HELMET", enchantments: { protection: 3, unbreaking: 2 } }, boots: { material: "DIAMOND_BOOTS", enchantments: { protection: 3, feather_falling: 4 } } }
-      - { min_lvl: 78, helmet: { material: "NETHERITE_HELMET", enchantments: { protection: 2 } }, chestplate: { material: "DIAMOND_CHESTPLATE", enchantments: { protection: 4, thorns: 2 } } }
-      - { min_lvl: 82, helmet: { material: "NETHERITE_HELMET", enchantments: { protection: 3, unbreaking: 2 } }, leggings: { material: "NETHERITE_LEGGINGS", enchantments: { protection: 2 } } }
-      - { min_lvl: 85, helmet: { material: "NETHERITE_HELMET", enchantments: { protection: 3 } }, chestplate: { material: "NETHERITE_CHESTPLATE", enchantments: { protection: 3 } }, leggings: { material: "NETHERITE_LEGGINGS", enchantments: { protection: 3 } }, boots: { material: "NETHERITE_BOOTS", enchantments: { protection: 3 } } }
-      - { min_lvl: 92, helmet: { material: "NETHERITE_HELMET", enchantments: { protection: 4, unbreaking: 3 } }, chestplate: { material: "NETHERITE_CHESTPLATE", enchantments: { protection: 4, thorns: 3 } }, leggings: { material: "NETHERITE_LEGGINGS", enchantments: { protection: 4 } }, boots: { material: "NETHERITE_BOOTS", enchantments: { protection: 4, feather_falling: 4 } } }
+      - { material: "CROSSBOW", min_lvl: 96, enchantments: { multishot: 1, piercing: 4, quick_charge: 3 } }
+      - { material: "CROSSBOW", min_lvl: 98, enchantments: { multishot: 1, piercing: 4, quick_charge: 3, unbreaking: 3 } }
+      - { material: "CROSSBOW", min_lvl: 99, enchantments: { multishot: 1, piercing: 4, quick_charge: 3, unbreaking: 3, mending: 1 } }
+      - { material: "CROSSBOW", min_lvl: 100, enchantments: { multishot: 1, piercing: 4, quick_charge: 3, unbreaking: 3, mending: 1, curse_of_vanishing: 1 } }
   effects:
     particles: "ANGRY_VILLAGER"
     sounds:
@@ -336,6 +324,7 @@ SPIDER:
   name: "Паукан"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.377
   effects:
     particles: "SPORE_BLOSSOM_AIR"
     sounds:
@@ -347,6 +336,7 @@ ENDERMAN:
   name: "Шпала"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.4
   effects:
     particles: "PORTAL"
     sounds:
@@ -358,6 +348,7 @@ WITHER_SKELETON:
   name: "Босс иссушитель"
   enabled: true
   spawn_chance: 0.09 # 9%
+  exp_modifier: 0.688
   equipment:
     weapons:
       - { material: "STONE_SWORD", min_lvl: 1, enchantments: { sharpness: 2 } }
@@ -413,6 +404,7 @@ VINDICATOR:
   name: "Херобрин"
   enabled: true
   spawn_chance: 0.13 # 13%
+  exp_modifier: 1.0
   equipment:
     weapons:
       - { material: "IRON_AXE", min_lvl: 1, enchantments: { sharpness: 2 } }
@@ -436,13 +428,6 @@ VINDICATOR:
       - { material: "NETHERITE_SWORD", min_lvl: 85, enchantments: { sharpness: 5, knockback: 2, sweeping: 3, unbreaking: 3 } }
       - { material: "NETHERITE_AXE", min_lvl: 90, enchantments: { sharpness: 5, efficiency: 3, unbreaking: 3 } }
       - { material: "NETHERITE_AXE", min_lvl: 95, enchantments: { sharpness: 5, efficiency: 5, knockback: 2, unbreaking: 3 } }
-    armors:
-      - { min_lvl: 5, helmet: { material: "LEATHER_HELMET" } }
-      - { min_lvl: 15, chestplate: { material: "CHAINMAIL_CHESTPLATE" }, boots: { material: "LEATHER_BOOTS" } }
-      - { min_lvl: 25, helmet: { material: "IRON_HELMET", enchantments: { protection: 1 } } }
-      - { min_lvl: 40, chestplate: { material: "IRON_CHESTPLATE", enchantments: { protection: 2 } }, leggings: { material: "IRON_LEGGINGS" } }
-      - { min_lvl: 60, helmet: { material: "DIAMOND_HELMET", enchantments: { protection: 3 } }, chestplate: { material: "DIAMOND_CHESTPLATE", enchantments: { protection: 2, thorns: 1 } } }
-      - { min_lvl: 80, helmet: { material: "NETHERITE_HELMET", enchantments: { protection: 3 } }, chestplate: { material: "NETHERITE_CHESTPLATE", enchantments: { protection: 4, thorns: 2 } }, leggings: { material: "NETHERITE_LEGGINGS", enchantments: { protection: 3 } } }
   effects:
     particles: "ANGRY_VILLAGER"
     sounds:
@@ -454,6 +439,7 @@ STRAY:
   name: "Отмороженный"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.733
   equipment:
     weapons:
       - { material: "BOW", min_lvl: 1, enchantments: { power: 1, flame: 1 } }
@@ -481,6 +467,7 @@ CREEPER:
   enabled: true
   spawn_chance: 0.11 # 11%
   is_powered: true # Будет ли крипер заряженным
+  exp_modifier: 0.666
   effects:
     particles: "ELECTRIC_SPARK"
     sounds:
@@ -492,30 +479,34 @@ HUSK:
   name: "Пустынник"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.9
   equipment:
     weapons:
-      - { material: "WOODEN_SHOVEL", min_lvl: 1 }
-      - { material: "WOODEN_HOE", min_lvl: 3 }
-      - { material: "STONE_SHOVEL", min_lvl: 5 }
-      - { material: "WOODEN_PICKAXE", min_lvl: 8, enchantments: { efficiency: 1 } }
-      - { material: "STONE_SHOVEL", min_lvl: 10, enchantments: { efficiency: 1 } }
-      - { material: "STONE_HOE", min_lvl: 15, enchantments: { efficiency: 2 } }
-      - { material: "IRON_SHOVEL", min_lvl: 20, enchantments: { efficiency: 2 } }
-      - { material: "IRON_SWORD", min_lvl: 25, enchantments: { sharpness: 1 } }
-      - { material: "IRON_PICKAXE", min_lvl: 30, enchantments: { efficiency: 3 } }
-      - { material: "STONE_SWORD", min_lvl: 35, enchantments: { sharpness: 2, knockback: 1 } }
-      - { material: "IRON_SHOVEL", min_lvl: 40, enchantments: { efficiency: 3, unbreaking: 1 } }
-      - { material: "IRON_HOE", min_lvl: 45, enchantments: { efficiency: 4, unbreaking: 1 } }
-      - { material: "DIAMOND_SHOVEL", min_lvl: 50, enchantments: { efficiency: 4 } }
-      - { material: "IRON_SWORD", min_lvl: 55, enchantments: { sharpness: 3, fire_aspect: 1 } }
-      - { material: "DIAMOND_SWORD", min_lvl: 60, enchantments: { sharpness: 3, fire_aspect: 1 } }
-      - { material: "DIAMOND_PICKAXE", min_lvl: 65, enchantments: { efficiency: 4, fortune: 2 } }
-      - { material: "DIAMOND_HOE", min_lvl: 70, enchantments: { efficiency: 5, unbreaking: 2 } }
-      - { material: "NETHERITE_SHOVEL", min_lvl: 75, enchantments: { efficiency: 5, fortune: 2 } }
-      - { material: "NETHERITE_SWORD", min_lvl: 80, enchantments: { sharpness: 4, fire_aspect: 2 } }
-      - { material: "NETHERITE_PICKAXE", min_lvl: 85, enchantments: { efficiency: 5, fortune: 3, unbreaking: 3 } }
-      - { material: "NETHERITE_HOE", min_lvl: 90, enchantments: { sharpness: 3, efficiency: 5, unbreaking: 3 } }
-      - { material: "NETHERITE_SHOVEL", min_lvl: 95, enchantments: { sharpness: 4, efficiency: 5, fortune: 3, unbreaking: 3 } }
+      - { material: "WOODEN_SWORD",   min_lvl: 1,  enchantments: { sharpness: 1 } }
+      - { material: "STONE_SWORD",    min_lvl: 4,  enchantments: { sharpness: 1 } }
+      - { material: "STONE_AXE",      min_lvl: 7,  enchantments: { sharpness: 1 } }
+      - { material: "STONE_SWORD",    min_lvl: 10, enchantments: { sharpness: 1, knockback: 1 } }
+      - { material: "IRON_SWORD",     min_lvl: 13, enchantments: { sharpness: 2 } }
+      - { material: "IRON_AXE",       min_lvl: 16, enchantments: { sharpness: 2 } }
+      - { material: "IRON_SWORD",     min_lvl: 19, enchantments: { sharpness: 2, knockback: 1 } }
+      - { material: "IRON_SWORD",     min_lvl: 22, enchantments: { sharpness: 2, fire_aspect: 1 } }
+      - { material: "IRON_AXE",       min_lvl: 26, enchantments: { sharpness: 3 } }
+      - { material: "DIAMOND_SWORD",  min_lvl: 30, enchantments: { sharpness: 3 } }
+      - { material: "DIAMOND_SWORD",  min_lvl: 34, enchantments: { sharpness: 3, knockback: 1 } }
+      - { material: "DIAMOND_AXE",    min_lvl: 38, enchantments: { sharpness: 3 } }
+      - { material: "DIAMOND_SWORD",  min_lvl: 42, enchantments: { sharpness: 3, fire_aspect: 1 } }
+      - { material: "DIAMOND_SWORD",  min_lvl: 46, enchantments: { sharpness: 4 } }
+      - { material: "DIAMOND_SWORD",  min_lvl: 50, enchantments: { sharpness: 4, knockback: 2 } }
+      - { material: "DIAMOND_SWORD",  min_lvl: 55, enchantments: { sharpness: 4, fire_aspect: 2 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 60, enchantments: { sharpness: 4 } }
+      - { material: "NETHERITE_AXE",   min_lvl: 65, enchantments: { sharpness: 4 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 70, enchantments: { sharpness: 4, knockback: 2 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 75, enchantments: { sharpness: 5 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 82, enchantments: { sharpness: 5, fire_aspect: 2 } }
+      - { material: "NETHERITE_AXE",   min_lvl: 88, enchantments: { sharpness: 5 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 94, enchantments: { sharpness: 5, knockback: 2 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 98, enchantments: { sharpness: 5, fire_aspect: 2, unbreaking: 3 } }
+      - { material: "NETHERITE_SWORD", min_lvl: 100, enchantments: { sharpness: 6, fire_aspect: 2, knockback: 2, unbreaking: 3 } }
     armors:
       - { min_lvl: 5, helmet: { material: "LEATHER_HELMET", enchantments: { aqua_affinity: 1 } } }
       - { min_lvl: 15, chestplate: { material: "LEATHER_CHESTPLATE" }, boots: { material: "LEATHER_BOOTS" } }
@@ -531,9 +522,10 @@ HUSK:
       summon: "ENTITY_HUSK_CONVERTED_TO_ZOMBIE"
 
 WITCH:
-  name: "Ведьмачка"
+  name: "Жрица"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 0.377
   equipment:
     weapons:
       - { material: "STICK", min_lvl: 1 }
@@ -587,6 +579,7 @@ DROWNED:
   name: "Затонувший"
   enabled: true
   spawn_chance: 0.10 # 10%
+  exp_modifier: 1.0
   equipment:
     weapons:
       - { material: "TRIDENT", min_lvl: 1 }
@@ -640,6 +633,7 @@ EVOKER:
   name: "Джаггернаут"
   enabled: true
   spawn_chance: 0.10 # 10%
+  exp_modifier: 0.7
   equipment:
     weapons:
       - { material: "STICK", min_lvl: 1 }
@@ -648,12 +642,6 @@ EVOKER:
       - { material: "TOTEM_OF_UNDYING", min_lvl: 50 }
       - { material: "ENCHANTED_BOOK", min_lvl: 70 }
       - { material: "NETHER_STAR", min_lvl: 90 }
-    armors:
-      - { min_lvl: 10, helmet: { material: "LEATHER_HELMET", enchantments: { protection: 2 } } }
-      - { min_lvl: 25, chestplate: { material: "GOLDEN_CHESTPLATE", enchantments: { protection: 3 } } }
-      - { min_lvl: 40, helmet: { material: "IRON_HELMET", enchantments: { protection: 3, thorns: 1 } }, boots: { material: "IRON_BOOTS", enchantments: { feather_falling: 2 } } }
-      - { min_lvl: 60, chestplate: { material: "DIAMOND_CHESTPLATE", enchantments: { protection: 4, thorns: 2 } }, leggings: { material: "DIAMOND_LEGGINGS", enchantments: { protection: 3 } } }
-      - { min_lvl: 80, helmet: { material: "NETHERITE_HELMET", enchantments: { protection: 4, thorns: 2 } }, chestplate: { material: "NETHERITE_CHESTPLATE", enchantments: { protection: 4, thorns: 3 } }, boots: { material: "NETHERITE_BOOTS", enchantments: { protection: 4, feather_falling: 4 } } }
   effects:
     particles: "ENCHANT"
     sounds:
@@ -665,6 +653,7 @@ PHANTOM:
   name: "БПЛА"
   enabled: true
   spawn_chance: 0.12 # 12%
+  exp_modifier: 0.3
   effects:
     particles: "END_ROD"
     sounds:
@@ -676,6 +665,7 @@ VEX:
   name: "Дух"
   enabled: true
   spawn_chance: 0.10 # 10%
+  exp_modifier: 0.766
   equipment:
     weapons:
       - { material: "IRON_AXE", min_lvl: 1, enchantments: { sharpness: 2 } }
@@ -707,9 +697,10 @@ VEX:
       summon: "ENTITY_VEX_CHARGE"
 
 ZOMBIE_VILLAGER:
-  name: "Зомбик"
+  name: "Зомбачелло"
   enabled: true
   spawn_chance: 0.11 # 11%
+  exp_modifier: 1.0
   equipment:
     weapons:
       - { material: "WOODEN_SWORD", min_lvl: 1 }

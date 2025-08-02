@@ -8,32 +8,23 @@ enabled: true        # Включает/выключает плагин цели
 debug: false         # Подробное логирование (в т.ч. отладочные сообщения).
 
 messages:
-  # Сообщение о входе игрока (каждый раз). <player> — ник игрока.
-  join: "<green><bold>✨ <dark_green><bold><player> присоединился к Xi World! <green><bold><player> 加入了習世界! <dark_green><bold>🐉"
+  join: "🐉 <#FFD700><bold><player> присоединился к Xi World!</bold></#FFD700> <gray>｜</gray> <#DC143C><bold><player> 加入了習世界！</bold></#DC143C>"
 
-  # Сообщение о первом входе.
   first_join: |-
-    <red><bold>🏮 🐉 🎋 ✨ 🐲 🏮 🐉 🎋 ✨ 🐲 🏮</red>
+    🐉 <#FFD700><bold>Добро пожаловать в Xi World, <player>!</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>欢迎来到習世界，<player>！</bold></#DC143C>
 
-    <gold><bold>🐉 Добро пожаловать в Xi World, <player>! <red><bold>欢迎来到習世界, <player>! <gold><bold>🐲
+    <#FFD700><bold>Мы рады видеть тебя — приятной игры!</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>很高兴见到你，祝你玩得开心！</bold></#DC143C>
 
-    <yellow><bold>Мы рады видеть тебя в нашем мире — приятной игры!
-    <red><bold>我们很高兴在習世界见到你——祝你游戏愉快!
+    <#FFD700><bold>⚔ Уважай других игроков.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>⚔ 尊重其他玩家。</bold></#DC143C>
+    <#FFD700><bold>⚔ Строй с умом и береги мир.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>⚔ 合理建造，爱护世界。</bold></#DC143C>
 
-    <gold><bold>⚔ Уважайте других игроков в Xi World.
-    <gold><bold>⚔ Стройте с умом и бережно относитесь к習世界.
-
-    <red><bold>🏮 🐉 🎋 ✨ 🐲 🏮 🐉 🎋 ✨ 🐲 🏮</red>
-
-  # Сообщение об отключении игрока.
-  quit: "<red><bold>⚔ <gold><bold><player> покинул Xi World! <red><bold><player> 离开了習世界! <yellow><bold>⚔"
+  quit: "🐉 <#FFD700><bold><player> покинул Xi World.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold><player> 离开了習世界。</bold></#DC143C>"
 
   system:
-    # Служебные сообщения для команд/перезагрузки.
-    permission: "<red><bold>🏮 <gold><bold>Недостаточно прав в Xi World! <red><bold>在習世界权限不足! 🏮"
-    incorrect: "<red><bold>⚔ <yellow><bold>Неверная команда Xi World! <red><bold>習世界命令错误! <yellow><bold>используйте /mojoins reload! ⚔"
-    reloaded: "<green><bold>✨ <dark_green><bold>Настройки Xi World перезагружены! <green><bold>習世界设置已重新加载! 🎋"
-    reload_failed: "<red><bold>🐉 <gold><bold>Перезагрузка Xi World не удалась! <red><bold>習世界重新加载失败! <gold><bold>проверьте логи! 🐲"
+    permission: "🐉 <#FFD700><bold>Недостаточно прав в Xi World — доступ запрещён.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>你在習世界权限不足——拒绝访问。</bold></#DC143C>"
+    incorrect: "🐉 <#FFD700><bold>Неверная команда Xi World.</bold></#FFD700> <yellow><bold>Используйте /mojoins reload.</bold></yellow> <gray>｜</gray> <#DC143C><bold>習世界命令错误。</bold></#DC143C> <yellow><bold>请使用 /mojoins reload。</bold></yellow>"
+    reloaded: "🐉 <#FFD700><bold>Настройки Xi World перезагружены.</bold></#FFD700> <dark_green><bold>Всё готово!</bold></dark_green> <gray>｜</gray> <#DC143C><bold>習世界设置已重新加载。</bold></#DC143C> <dark_green><bold>一切就绪！</bold></dark_green>"
+    reload_failed: "🐉 <#FFD700><bold>Перезагрузка Xi World не удалась — проверьте логи.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>習世界重新加载失败——请检查日志。</bold></#DC143C>"
 
 # Список эффектов, применяемых каждый раз при входе.
 # name: тип (например, resistance, saturation, speed, haste, fire_resistance, absorption и т.п.)

@@ -1,19 +1,18 @@
 # Настройки призыва миньонов по типам мобов, Mo'Bosses.
 
 minions:
-  - { summoner: "ZOMBIE", entity: "ZOMBIE", name: "Зомбик 習殭屍" }
-  - { summoner: "SPIDER", entity: "CAVE_SPIDER", name: "Пауканчик 習蜘蛛" }
-  - { summoner: "SKELETON", entity: "SKELETON", name: "Скелетончик 習骷髅" }
-  - { summoner: "ENDERMAN", entity: "ENDERMITE", name: "Эндермит 習末影蟎" }
-  - { summoner: "PIGLIN", entity: "PIGLIN", name: "Пиглинок 習豬人" }
-  - { summoner: "WITHER_SKELETON", entity: "WITHER_SKELETON", name: "Скелетик 習凋零骷髅" }
-  - { summoner: "PILLAGER", entity: "PILLAGER", name: "Разбойник 習掠夺者" }
-  - { summoner: "EVOKER", entity: "VINDICATOR", name: "Патологоанатом 習卫道士" }
-  - { summoner: "WITCH", entity: "WITCH", name: "Ученик хогвартса 習女巫" }
-  - { summoner: "VINDICATOR", entity: "VEX", name: "Дух 習恼鬼" }
-  - { summoner: "STRAY", entity: "STRAY", name: "Замороженный 習流髑" }
-  - { summoner: "HUSK", entity: "HUSK", name: "Запесоченный 習尸壳" }
-  - { summoner: "DROWNED", entity: "DROWNED", name: "Затонувший 習溺尸" }
-  - { summoner: "PHANTOM", entity: "PHANTOM", name: "Шахед-136 習幻翼" }
-  - { summoner: "VEX", entity: "VEX", name: "Дух 習恼鬼" }
-  - { summoner: "ZOMBIE_VILLAGER", entity: "ZOMBIE_VILLAGER", name: "Зомбик 習殭屍村民" }
+  - { summoner: "ZOMBIE",          entity: "ZOMBIE",          name: "Гниль 僵尸" }
+  - { summoner: "SPIDER",          entity: "CAVE_SPIDER",     name: "Пауканчик 洞穴蜘蛛" }
+  - { summoner: "SKELETON",        entity: "SKELETON",        name: "Скелетончик 骷髅" }
+  - { summoner: "ENDERMAN",        entity: "ENDERMITE",       name: "Эндерчервь 末影螨" }
+  - { summoner: "WITHER_SKELETON", entity: "WITHER_SKELETON", name: "Скелетик 凋灵骷髅" }
+  - { summoner: "PILLAGER",        entity: "PILLAGER",        name: "Разбойник 掠夺者" }
+  - { summoner: "EVOKER",          entity: "VINDICATOR",      name: "Патологоанатом 卫道士" }
+  - { summoner: "WITCH",           entity: "ZOMBIE",          name: "Поддувало жрицы 僵尸" }
+  - { summoner: "VINDICATOR",      entity: "VEX",             name: "Дух 恼鬼" }
+  - { summoner: "STRAY",           entity: "STRAY",           name: "Замороженный 流浪者" }
+  - { summoner: "HUSK",            entity: "HUSK",            name: "Запесоченный 尸壳" }
+  - { summoner: "DROWNED",         entity: "DROWNED",         name: "Затонувший 溺尸" }
+  - { summoner: "PHANTOM",         entity: "PHANTOM",         name: "Шахед-136 幻翼" }
+  - { summoner: "VEX",             entity: "VEX",             name: "Дух 恼鬼" }
+  - { summoner: "ZOMBIE_VILLAGER", entity: "ZOMBIE_VILLAGER", name: "Зомбик 僵尸村民" }

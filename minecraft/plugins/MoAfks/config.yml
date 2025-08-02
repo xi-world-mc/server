@@ -22,13 +22,13 @@ auto:
   # Секунд бездействия до авто-входа в AFK.
   seconds: 60
   # Сообщение игроку о входе в AFK автоматически.
-  enter_message: "🐉 <gold><bold>Похоже, ты задремал от бездействия!</bold></gold> <yellow><bold>Пошевелись или введи /afk.</bold></yellow> <gray>｜</gray> <gold><bold>看起来你暂时离开了！</bold></gold> <yellow><bold>动一动或者输入 /afk。</bold></yellow>"
+  enter_message: "🐉 <#FFD700><bold>Похоже, ты задремал от бездействия!</bold></#FFD700> <yellow><bold>Пошевелись или введи /afk.</bold></yellow> <gray>｜</gray> <#DC143C><bold>看起来你暂时离开了！</bold></#DC143C> <yellow><bold>动一动或者输入 /afk。</bold></yellow>"
   # Сообщение для всех о том, что игрок вошел в AFK автоматически.
-  enter_broadcast_message: "🐉 <gold><bold><player></bold></gold> <yellow><bold>отошёл от клавиатуры в Xi World!</bold></yellow> <gray>｜</gray> <gold><bold><player></bold></gold> <yellow><bold>在習世界暂时离开！</bold></yellow>"
+  enter_broadcast_message: "🐉 <#FFD700><bold><player></bold></#FFD700> <yellow><bold>отошёл от клавиатуры в Xi World!</bold></yellow> <gray>｜</gray> <#DC143C><bold><player></bold></#DC143C> <yellow><bold>在習世界暂时离开！</bold></yellow>"
   # Звук при авто-входе в AFK (namespaced ключ звука).
   enter_sound: "minecraft:entity.experience_orb.pickup"
   # Сообщение игроку о выходе из AFK автоматически (например, при движении).
-  exit_message: "🐉 <green><bold>Добро пожаловать обратно в Xi World!</bold></green> <dark_green><bold>Готов к приключениям?</bold></dark_green> <gray>｜</gray> <green><bold>欢迎回到習世界！</bold></green> <dark_green><bold>准备好冒险了吗？</bold></dark_green>"
+  exit_message: "🐉 <#FFD700><bold>Добро пожаловать обратно в Xi World!</bold></#FFD700> <dark_green><bold>Готов к приключениям?</bold></dark_green> <gray>｜</gray> <#DC143C><bold>欢迎回到習世界！</bold></#DC143C> <dark_green><bold>准备好冒险了吗？</bold></dark_green>"
   # Звук при авто-выходе из AFK.
   exit_sound: "minecraft:entity.player.levelup"
 
@@ -36,21 +36,21 @@ manual:
   # Разрешить ручной вход/выход через /afk.
   enabled: true
   # Сообщение игроку при ручном входе в AFK без причины.
-  enter_message: "🐉 <gold><bold>Ты решил отойти от Xi World — хорошего отдыха!</bold></gold> <gray>｜</gray> <gold><bold>你决定暂时离开習世界，好好休息！</bold></gold>"
+  enter_message: "🐉 <#FFD700><bold>Ты решил отойти от Xi World — хорошего отдыха!</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>你决定暂时离开習世界，好好休息！</bold></#DC143C>"
   # Сообщение игроку при ручном входе в AFK с причиной.
-  enter_message_reasoned: "🐉 <gold><bold>Ты отошёл от Xi World по причине: <yellow><reason></yellow>.</bold></gold> <gray>｜</gray> <gold><bold>你因为 <yellow><reason></yellow> 暂时离开習世界。</bold></gold>"
+  enter_message_reasoned: "🐉 <#FFD700><bold>Ты отошёл от Xi World по причине: <yellow><reason></yellow>.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>你因为 <yellow><reason></yellow> 暂时离开習世界。</bold></#DC143C>"
   # Бродкаст сообщение о ручном входе в AFK без причины.
-  enter_broadcast_message: "🐉 <gold><bold><player></bold></gold> <yellow><bold>отошёл от клавиатуры в Xi World.</bold></yellow> <gray>｜</gray> <gold><bold><player></bold></gold> <yellow><bold>在習世界暂时离开。</bold></yellow>"
+  enter_broadcast_message: "🐉 <#FFD700><bold><player></bold></#FFD700> <yellow><bold>отошёл от клавиатуры в Xi World.</bold></yellow> <gray>｜</gray> <#DC143C><bold><player></bold></#DC143C> <yellow><bold>在習世界暂时离开。</bold></yellow>"
   # Бродкаст сообщение о ручном входе в AFK с причиной.
-  enter_broadcast_message_reasoned: "🐉 <gold><bold><player></bold></gold> <yellow><bold>ушёл в AFK по причине: <white><reason></white>.</bold></yellow> <gray>｜</gray> <gold><bold><player></bold></gold> <yellow><bold>因 <white><reason></white> 暂时离开習世界。</bold></yellow>"
+  enter_broadcast_message_reasoned: "🐉 <#FFD700><bold><player></bold></#FFD700> <yellow><bold>ушёл в AFK по причине: <white><reason></white>.</bold></yellow> <gray>｜</gray> <#DC143C><bold><player></bold></#DC143C> <yellow><bold>因 <white><reason></white> 暂时离开習世界。</bold></yellow>"
   # Звук при ручном входе.
   enter_sound: "minecraft:ui.button.click"
   # Сообщение игроку при ручном выходе из AFK.
-  exit_message: "🐉 <green><bold>С возвращением в Xi World!</bold></green> <dark_green><bold>Готов продолжить приключения?</bold></dark_green> <gray>｜</gray> <green><bold>欢迎回到習世界！</bold></green> <dark_green><bold>准备好继续冒险了吗？</bold></dark_green>"
+  exit_message: "🐉 <#FFD700><bold>С возвращением в Xi World!</bold></#FFD700> <dark_green><bold>Готов продолжить приключения?</bold></dark_green> <gray>｜</gray> <#DC143C><bold>欢迎回到習世界！</bold></#DC143C> <dark_green><bold>准备好继续冒险了吗？</bold></dark_green>"
   # Звук при ручном выходе.
   exit_sound: "minecraft:entity.player.levelup"
   # Сообщение об отказе входа в AFK (анти-абуз: бой, падение и т.д.).
-  declined_message: "🐉 <red><bold>Сейчас нельзя покинуть Xi World — слишком опасно!</bold></red> <gray>｜</gray> <red><bold>现在不能离开習世界——太危险了！</bold></red>"
+  declined_message: "🐉 <#FFD700><bold>Сейчас нельзя покинуть Xi World — слишком опасно!</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>现在不能离开習世界——太危险了！</bold></#DC143C>"
   # Звук при отказе.
   declined_sound: "minecraft:entity.villager.no"
 
@@ -60,7 +60,7 @@ limits:
   # Максимальная длительность AFK в секундах (например, 20 минут = 1200).
   seconds: 1200
   # Текст кика/выхода по лимиту (Adventure-формат).
-  kick_message: "🐉 <gold><bold>Слишком долго отсутствовал в Xi World — время истекло!</bold></gold> <gray>｜</gray> <gold><bold>在習世界离开太久了——时间已到！</bold></gold>"
+  kick_message: "🐉 <#FFD700><bold>Слишком долго отсутствовал в Xi World — время истекло!</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>在習世界离开太久了——时间已到！</bold></#DC143C>"
   warning:
     # Включить предупреждения о скором окончании AFK.
     enabled: true
@@ -69,7 +69,7 @@ limits:
     # Звук предупреждения.
     sound: "minecraft:block.note_block.pling"
     # Текст предупреждения в Action Bar (Adventure-формат). Можно использовать <seconds>.
-    text: "🐉 <gold><bold>AFK в Xi World закончится через <white><seconds></white> сек.</bold></gold> <gray>｜</gray> <gold><bold>習世界 AFK 将在 <white><seconds></white> 秒后结束。</bold></gold>"
+    text: "🐉 <#FFD700><bold>AFK в Xi World закончится через <white><seconds></white> сек.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>習世界 AFK 将在 <white><seconds></white> 秒后结束。</bold></#DC143C>"
 
 # Набор предотвращаемых эффектов/событий, пока игрок AFK.
 # Возможные значения (на текущей версии):
@@ -99,10 +99,10 @@ exit_triggers: [combat, move, chat, command]
 system:
   messages:
     # Сообщение об успешной перезагрузке плагина.
-    reloaded: "🐉 <green><bold>Xi World AFK конфигурация обновлена.</bold></green> <dark_green><bold>Всё готово!</bold></dark_green> <gray>｜</gray> <green><bold>習世界 AFK 配置已更新。</bold></green> <dark_green><bold>一切就绪！</bold></dark_green>"
+    reloaded: "🐉 <#FFD700><bold>Xi World AFK конфигурация обновлена.</bold></#FFD700> <dark_green><bold>Всё готово!</bold></dark_green> <gray>｜</gray> <#DC143C><bold>習世界 AFK 配置已更新。</bold></#DC143C> <dark_green><bold>一切就绪！</bold></dark_green>"
     # Сообщение об ошибочном использовании команды /moafks.
-    incorrect: "🐉 <red><bold>Неправильная команда Xi World AFK.</bold></red> <yellow><bold>Используй /moafks reload.</bold></yellow> <gray>｜</gray> <red><bold>習世界 AFK 命令错误。</bold></red> <yellow><bold>请使用 /moafks reload。</bold></yellow>"
+    incorrect: "🐉 <#FFD700><bold>Неправильная команда Xi World AFK.</bold></#FFD700> <yellow><bold>Используй /moafks reload.</bold></yellow> <gray>｜</gray> <#DC143C><bold>習世界 AFK 命令错误。</bold></#DC143C> <yellow><bold>请使用 /moafks reload。</bold></yellow>"
     # Сообщение о недостатке прав.
-    restricted: "🐉 <red><bold>Недостаточно прав в Xi World — доступ запрещён.</bold></red> <gray>｜</gray> <red><bold>你在習世界没有权限——拒绝访问。</bold></red>"
+    restricted: "🐉 <#FFD700><bold>Недостаточно прав в Xi World — доступ запрещён.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>你在習世界没有权限——拒绝访问。</bold></#DC143C>"
     # Сообщение, что выход из AFK был небезопасным — телепорт на ближайший безопасный блок.
-    unsafe: "🐉 <gold><bold>Выход из AFK небезопасен — телепортация в безопасное место Xi World.</bold></gold> <gray>｜</gray> <gold><bold>退出 AFK 不安全——传送到習世界安全位置。</bold></gold>"
+    unsafe: "🐉 <#FFD700><bold>Выход из AFK небезопасен — телепортация в безопасное место Xi World.</bold></#FFD700> <gray>｜</gray> <#DC143C><bold>退出 AFK 不安全——传送到習世界安全位置。</bold></#DC143C>"

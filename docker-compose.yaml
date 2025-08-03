@@ -126,6 +126,19 @@ services:
       driver: local
       options: { max-size: "10m", max-file: "3" }
 
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.52.1
+    container_name: cadvisor
+    networks: [default]
+    env_file: .env
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    privileged: true
+    restart: unless-stopped
+
   dozzle:
     image: amir20/dozzle:latest
     container_name: dozzle

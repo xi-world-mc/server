@@ -29,6 +29,8 @@ auto:
   enter_sound: "minecraft:entity.experience_orb.pickup"
   # Сообщение игроку о выходе из AFK автоматически (например, при движении).
   exit_message: "🐉 <#FFD700><bold>Добро пожаловать обратно в Xi World!</bold></#FFD700> <dark_green><bold>Готов к приключениям?</bold></dark_green> <gray>｜</gray> <#DC143C><bold>欢迎回到習世界！</bold></#DC143C> <dark_green><bold>准备好冒险了吗？</bold></dark_green>"
+  # Broadcast сообщение о выходе игрока из автоматического AFK.
+  exit_broadcast_message: "🐉 <green>«</green> <#FFD700><bold><player></bold></#FFD700> <yellow><bold>вернулся к игре после отдыха</bold></yellow> <gray>｜</gray> <green>«</green> <#DC143C><bold><player></bold></#DC143C> <yellow><bold>休息后回到了游戏</bold></yellow>"
   # Звук при авто-выходе из AFK.
   exit_sound: "minecraft:entity.player.levelup"
 
@@ -47,6 +49,8 @@ manual:
   enter_sound: "minecraft:ui.button.click"
   # Сообщение игроку при ручном выходе из AFK.
   exit_message: "🐉 <#FFD700><bold>С возвращением в Xi World!</bold></#FFD700> <dark_green><bold>Готов продолжить приключения?</bold></dark_green> <gray>｜</gray> <#DC143C><bold>欢迎回到習世界！</bold></#DC143C> <dark_green><bold>准备好继续冒险了吗？</bold></dark_green>"
+  # Broadcast сообщение о выходе игрока из ручного AFK.
+  exit_broadcast_message: "🐉 <green>«</green> <#FFD700><bold><player></bold></#FFD700> <yellow><bold>вернулся в игру</bold></yellow> <dark_gray>(активность восстановлена)</dark_gray> <gray>｜</gray> <green>«</green> <#DC143C><bold><player></bold></#DC143C> <yellow><bold>已回到游戏</bold></yellow> <dark_gray>(活动已恢复)</dark_gray>"
   # Звук при ручном выходе.
   exit_sound: "minecraft:entity.player.levelup"
   # Сообщение об отказе входа в AFK (анти-абуз: бой, падение и т.д.).
@@ -65,7 +69,7 @@ limits:
     # Включить предупреждения о скором окончании AFK.
     enabled: true
     # Моменты предупреждений (в секундах до выхода/кика).
-    seconds: [10, 30, 60, 90]
+    seconds: [1, 2, 3, 4, 5, 10, 30, 60, 90]
     # Звук предупреждения.
     sound: "minecraft:block.note_block.pling"
     # Текст предупреждения в Action Bar (Adventure-формат). Можно использовать <seconds>.
@@ -77,9 +81,6 @@ limits:
 prevents: [explosions,fire,entity_damage,projectile_damage,hunger,fall,mob_target,collision]
 
 effects:
-  # Режим отсутствия коллизии/толканий (noclip/без столкновений).
-  noclip:
-    enabled: true
   # Частицы вокруг игрока во время AFK.
   particles:
     enabled: true

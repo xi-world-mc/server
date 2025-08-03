@@ -138,6 +138,9 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
     privileged: true
     restart: unless-stopped
+    logging:
+      driver: local
+      options: { max-size: "10m", max-file: "3" }
 
   dozzle:
     image: amir20/dozzle:latest
@@ -148,6 +151,20 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./minecraft/dozzle:/data
       - ./configurations/dozzle/users.yml:/data/users.yml
+    restart: unless-stopped
+    logging:
+      driver: local
+      options: { max-size: "10m", max-file: "3" }
+
+  dockge:
+    image: louislam/dockge:latest
+    container_name: dockge
+    networks: [default]
+    env_file: .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/stacks:/opt/stacks
+      - /opt/dockge:/app/data
     restart: unless-stopped
     logging:
       driver: local

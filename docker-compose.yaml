@@ -156,15 +156,18 @@ services:
       driver: local
       options: { max-size: "10m", max-file: "3" }
 
-  dockge:
-    image: louislam/dockge:latest
-    container_name: dockge
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
     networks: [default]
     env_file: .env
+    command: >
+      -H unix:///var/run/docker.sock
+      --base-url /manage
+      --trusted-origins minecraft.ximanager.ru
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /opt/stacks:/opt/stacks
-      - /opt/dockge:/app/data
+      - ./minecraft/portainer:/data
     restart: unless-stopped
     logging:
       driver: local
